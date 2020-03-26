@@ -16,27 +16,27 @@ Find minimum total distance.
 
 ---
 
-Input:
-N M
+Input: \
+N M \
 x0 a p
 
-1 <= N, M <= 1000
-0 <= x0, a <= 10^9
+1 <= N, M <= 1000 \
+0 <= x0, a <= 10^9 \
 N * M <= p <= 10^9, and p is prime
 
-G[i][j] is generated as follows:
-for i == 0: x_i = x0
+G[i][j] is generated as follows: \
+for i == 0: x_i = x0 \
 for i >= 0: x_i = (x_(i - 1) + a) MOD p
 
 G[i][j] = x_(i * M + j)
 
 ---
 
-Example 2:
-2 3 
-6 55 59
+Example 2: \
+2 3 \
+6 55 59 
 
-Resulting G[i][j] is:
-6 2 57   
+Generated initial G[i][j] is: \
+6 2 57 \
 53 49 45 
 
